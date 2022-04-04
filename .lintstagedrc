@@ -1,0 +1,4 @@
+{
+  "apps/**/*.{ts,scss,html,json}": "npm run prettier:check",
+  "libs/**/*.{ts,scss,html,json}": "npm run prettier:check"
+}

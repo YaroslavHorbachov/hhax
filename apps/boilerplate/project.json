@@ -14,10 +14,7 @@
         "polyfills": "apps/boilerplate/src/polyfills.ts",
         "tsConfig": "apps/boilerplate/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/boilerplate/src/favicon.ico",
-          "apps/boilerplate/src/assets"
-        ],
+        "assets": ["apps/boilerplate/src/favicon.ico", "apps/boilerplate/src/assets"],
         "styles": ["apps/boilerplate/src/styles.scss"],
         "scripts": []
       },
@@ -75,10 +72,7 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/boilerplate/src/**/*.ts",
-          "apps/boilerplate/src/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/boilerplate/src/**/*.ts", "apps/boilerplate/src/**/*.html"]
       }
     },
     "test": {
