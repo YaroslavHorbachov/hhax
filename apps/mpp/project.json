@@ -1,0 +1,88 @@
+{
+  "projectType": "application",
+  "root": "apps/mpp",
+  "sourceRoot": "apps/mpp/src",
+  "prefix": "hhax",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/mpp",
+        "index": "apps/mpp/src/index.html",
+        "main": "apps/mpp/src/main.ts",
+        "polyfills": "apps/mpp/src/polyfills.ts",
+        "tsConfig": "apps/mpp/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/mpp/src/favicon.ico", "apps/mpp/src/assets"],
+        "styles": ["apps/mpp/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/mpp/src/environments/environment.ts",
+              "with": "apps/mpp/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "mpp:build:production"
+        },
+        "development": {
+          "browserTarget": "mpp:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "mpp:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/mpp/src/**/*.ts", "apps/mpp/src/**/*.html"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/mpp"],
+      "options": {
+        "jestConfig": "apps/mpp/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

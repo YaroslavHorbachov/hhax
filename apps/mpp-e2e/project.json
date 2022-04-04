@@ -1,0 +1,28 @@
+{
+  "root": "apps/mpp-e2e",
+  "sourceRoot": "apps/mpp-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/mpp-e2e/cypress.json",
+        "devServerTarget": "mpp:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "mpp:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mpp-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["mpp"]
+}
