@@ -13,6 +13,9 @@
     "npp-e2e": "apps/npp-e2e",
     "ui-components": "libs/ui-components",
     "util-env": "libs/util-env",
-    "util-formatters": "libs/util-formatters"
+    "util-formatters": "libs/util-formatters",
+    "util-ngrx": "libs/util-ngrx",
+    "util-shared": "libs/util-shared",
+    "util-testing": "libs/util-testing"
   }
 }

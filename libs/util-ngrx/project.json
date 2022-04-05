@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/util-ngrx",
+  "sourceRoot": "libs/util-ngrx/src",
+  "prefix": "hhax",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/util-ngrx"],
+      "options": {
+        "jestConfig": "libs/util-ngrx/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/util-ngrx/src/**/*.ts", "libs/util-ngrx/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
