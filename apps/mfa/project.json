@@ -84,5 +84,6 @@
       }
     }
   },
-  "tags": []
+  "tags": [],
+  "implicitDependencies": ["util-env", "ui-components"]
 }

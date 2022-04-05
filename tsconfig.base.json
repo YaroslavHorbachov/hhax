@@ -19,7 +19,10 @@
       "@hhax/feature-patient": ["libs/feature-patient/src/index.ts"],
       "@hhax/ui-components": ["libs/ui-components/src/index.ts"],
       "@hhax/util-env": ["libs/util-env/src/index.ts"],
-      "@hhax/util-formatters": ["libs/util-formatters/src/index.ts"]
+      "@hhax/util-formatters": ["libs/util-formatters/src/index.ts"],
+      "@hhax/util-ngrx": ["libs/util-ngrx/src/index.ts"],
+      "@hhax/util-shared": ["libs/util-shared/src/index.ts"],
+      "@hhax/util-testing": ["libs/util-testing/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

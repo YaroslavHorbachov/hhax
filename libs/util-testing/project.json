@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/util-testing",
+  "sourceRoot": "libs/util-testing/src",
+  "prefix": "hhax",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/util-testing"],
+      "options": {
+        "jestConfig": "libs/util-testing/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/util-testing/src/**/*.ts", "libs/util-testing/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
