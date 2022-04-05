@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/util-formatters",
+  "sourceRoot": "libs/util-formatters/src",
+  "prefix": "hhax",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/util-formatters"],
+      "options": {
+        "jestConfig": "libs/util-formatters/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/util-formatters/src/**/*.ts", "libs/util-formatters/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

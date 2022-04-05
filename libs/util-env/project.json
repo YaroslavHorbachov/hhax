@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/util-env",
+  "sourceRoot": "libs/util-env/src",
+  "prefix": "hhax",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/util-env"],
+      "options": {
+        "jestConfig": "libs/util-env/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/util-env/src/**/*.ts", "libs/util-env/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

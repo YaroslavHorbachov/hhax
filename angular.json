@@ -2,6 +2,17 @@
   "version": 2,
   "projects": {
     "boilerplate": "apps/boilerplate",
-    "boilerplate-e2e": "apps/boilerplate-e2e"
+    "boilerplate-e2e": "apps/boilerplate-e2e",
+    "data-access-api": "libs/data-access-api",
+    "feature-patient": "libs/feature-patient",
+    "mfa": "apps/mfa",
+    "mfa-e2e": "apps/mfa-e2e",
+    "mpp": "apps/mpp",
+    "mpp-e2e": "apps/mpp-e2e",
+    "npp": "apps/npp",
+    "npp-e2e": "apps/npp-e2e",
+    "ui-components": "libs/ui-components",
+    "util-env": "libs/util-env",
+    "util-formatters": "libs/util-formatters"
   }
 }
