@@ -5,7 +5,7 @@ import { Directive, HostListener, NgModule } from '@angular/core';
   selector: '[hhaxScrollManager]',
 })
 export class ScrollManagerDirective {
-  @HostListener('scroll') public onScroll() {
+  @HostListener('scroll') public onScroll(): void {
     console.log('Scroll');
   }
 }

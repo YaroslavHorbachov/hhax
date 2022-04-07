@@ -2,9 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+import { Env } from '@hhax/util-env';
+
+export const environment: Env = {
   production: false,
   name: 'MFA',
+  catApiKey: '224f171f-5782-47a5-97ce-c7c808aa575b',
 };
 
 /*

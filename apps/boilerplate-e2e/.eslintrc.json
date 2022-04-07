@@ -4,13 +4,8 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "rules": {}
-    },
-    {
-      "files": ["src/plugins/index.js"],
-      "rules": {
-        "@typescript-eslint/no-var-requires": "off",
-        "no-undef": "off"
+      "parserOptions": {
+        "project": ["apps/boilerplate-e2e/tsconfig.json"]
       }
     }
   ]

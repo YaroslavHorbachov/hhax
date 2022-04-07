@@ -12,6 +12,7 @@
     "npp": "apps/npp",
     "npp-e2e": "apps/npp-e2e",
     "ui-components": "libs/ui-components",
+    "util-auth": "libs/util-auth",
     "util-env": "libs/util-env",
     "util-formatters": "libs/util-formatters",
     "util-ngrx": "libs/util-ngrx",

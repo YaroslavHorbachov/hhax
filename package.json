@@ -17,7 +17,8 @@
     "commit": "cz",
     "prepare": "husky install",
     "prettier:write": "prettier --write {libs,apps}/**/*.{ts,scss,html,json}",
-    "prettier:check": "prettier --check {libs,apps}/**/*.{ts,scss,html,json}"
+    "prettier:check": "prettier --check {libs,apps}/**/*.{ts,scss,html,json}",
+    "lint": "nx lint"
   },
   "private": true,
   "dependencies": {
@@ -61,6 +62,7 @@
     "eslint": "~8.7.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-rxjs": "^5.0.2",
     "husky": "^7.0.4",
     "jest": "27.2.3",
     "jest-preset-angular": "11.1.1",
