@@ -1,7 +1,8 @@
-import { Env } from '@hhax/util-env';
+import { MFAEnv } from '@hhax/util-env';
 
-export const environment: Env = {
+export const environment: MFAEnv = {
   production: true,
   name: 'MFA',
-  catApiKey: '',
+  patientApiKey: '',
+  patientApiUrl: '',
 };

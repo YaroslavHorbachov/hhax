@@ -1,1 +1,1 @@
-export * from './cat-client.service';
+export * from './patient-client.service';

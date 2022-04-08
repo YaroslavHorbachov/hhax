@@ -1,7 +1,7 @@
 import { ValueProvider } from '@angular/core';
-import { ENV_TOKEN } from '@hhax/util-env';
+import { ENV } from '@hhax/util-env';
 
-export const envMockProvider: ValueProvider = {
-  provide: ENV_TOKEN,
+export const mockEnvProvider: ValueProvider = {
+  provide: ENV,
   useValue: {},
 };

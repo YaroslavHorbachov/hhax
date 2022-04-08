@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
-import { Env, ENV_TOKEN } from '@hhax/util-env';
+import { Env, ENV } from '@hhax/util-env';
 
 @Component({
   selector: 'hhax-container',
@@ -8,7 +8,7 @@ import { Env, ENV_TOKEN } from '@hhax/util-env';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContainerComponent implements OnInit {
-  constructor(@Inject(ENV_TOKEN) private readonly env: Env) {}
+  constructor(@Inject(ENV) private readonly env: Env) {}
 
   public ngOnInit(): void {
     console.log(this.env);

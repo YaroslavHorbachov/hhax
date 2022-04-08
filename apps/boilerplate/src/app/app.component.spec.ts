@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { UiComponentsModule } from '@hhax/ui-components';
-import { envMockProvider } from '@hhax/util-testing';
+import { mockEnvProvider } from '@hhax/util-testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [UiComponentsModule],
-      providers: [envMockProvider],
+      providers: [mockEnvProvider],
       declarations: [AppComponent],
     }).compileComponents();
   });

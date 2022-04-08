@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { envMockProvider } from '@hhax/util-testing';
-import { UiComponentsModule } from '../ui-components.module';
+import { mockEnvProvider } from '@hhax/util-testing';
 import { ContainerComponent } from './container.component';
 
 describe('ContainerComponent', () => {
@@ -9,8 +8,8 @@ describe('ContainerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiComponentsModule],
-      providers: [envMockProvider],
+      imports: [],
+      providers: [mockEnvProvider],
       declarations: [ContainerComponent],
     }).compileComponents();
   });

@@ -1,1 +1,6 @@
-<p>patient-page works!</p>
+<h1 *ngIf="isLoading$ | async">Loading ...</h1>
+
+<ng-container *ngIf="patients$ | async as patients">
+  <hhax-patient-search></hhax-patient-search>
+  <hhax-patient-list [patients]="patients" [total]="total$ | async"></hhax-patient-list>
+</ng-container>

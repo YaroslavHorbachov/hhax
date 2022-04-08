@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { DataAccessApiModule } from '@hhax/data-access-api';
+import { mockEnvProvider } from '@hhax/util-testing';
+import { PatientService } from '../../services';
 import { PatientPageComponent } from './patient-page.component';
 
 describe('PatientPageComponent', () => {
@@ -8,7 +10,9 @@ describe('PatientPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [DataAccessApiModule],
       declarations: [PatientPageComponent],
+      providers: [PatientService, mockEnvProvider],
     }).compileComponents();
   });
 

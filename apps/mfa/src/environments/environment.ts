@@ -2,12 +2,13 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-import { Env } from '@hhax/util-env';
+import { MFAEnv } from '@hhax/util-env';
 
-export const environment: Env = {
+export const environment: MFAEnv = {
   production: false,
   name: 'MFA',
-  catApiKey: '224f171f-5782-47a5-97ce-c7c808aa575b',
+  patientApiKey: '224f171f-5782-47a5-97ce-c7c808aa575b',
+  patientApiUrl: 'https://api.thecatapi.com/v1/',
 };
 
 /*

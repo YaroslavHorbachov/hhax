@@ -1,1 +1,6 @@
-<p>patient-list works!</p>
+<p>Total {{ total }}</p>
+<div>
+  <div *ngFor="let patient of patients">
+    <p>{{ patient.description }}</p>
+  </div>
+</div>
