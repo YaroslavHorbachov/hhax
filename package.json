@@ -78,9 +78,5 @@
     "prettier": "2.6.2",
     "ts-jest": "27.0.5",
     "typescript": "~4.5.2"
-  },
-  "lint-staged": {
-    "libs/**/*.{ts,scss,html,json}": "npm run prettier:check",
-    "apps/**/*.{ts,scss,html,json}": "npm run prettier:check"
   }
 }
