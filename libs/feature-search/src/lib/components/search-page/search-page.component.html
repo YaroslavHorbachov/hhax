@@ -1,0 +1,11 @@
+<h1>Feature Search</h1>
+
+<hhax-search (search)="onSearch($event)"></hhax-search>
+
+<div *ngIf="isLoading$ | async; else contentTemplate">Loading...</div>
+
+<ng-template #contentTemplate>
+  <hhax-list [data]="allRecords$ | async" (selectRecord)="onSelect($event)"></hhax-list>
+</ng-template>
+
+<hhax-details *ngIf="selectedRecord$ | async as selectedRecord" [data]="selectedRecord"></hhax-details>

@@ -5,6 +5,7 @@
     "boilerplate-e2e": "apps/boilerplate-e2e",
     "data-access-api": "libs/data-access-api",
     "feature-patient": "libs/feature-patient",
+    "feature-search": "libs/feature-search",
     "mfa": "apps/mfa",
     "mfa-e2e": "apps/mfa-e2e",
     "mpp": "apps/mpp",

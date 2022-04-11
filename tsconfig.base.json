@@ -17,6 +17,7 @@
     "paths": {
       "@hhax/data-access-api": ["libs/data-access-api/src/index.ts"],
       "@hhax/feature-patient": ["libs/feature-patient/src/index.ts"],
+      "@hhax/feature-search": ["libs/feature-search/src/index.ts"],
       "@hhax/ui-components": ["libs/ui-components/src/index.ts"],
       "@hhax/util-auth": ["libs/util-auth/src/index.ts"],
       "@hhax/util-env": ["libs/util-env/src/index.ts"],

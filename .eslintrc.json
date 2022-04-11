@@ -1,11 +1,11 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx", "rxjs"],
+  "plugins": ["@nrwl/nx", "rxjs", "ngrx"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/typescript"],
+      "extends": ["plugin:@nrwl/nx/typescript", "plugin:ngrx/recommended"],
       "rules": {
         "@typescript-eslint/explicit-member-accessibility": [
           "error",
@@ -123,10 +123,8 @@
             "format": ["StrictPascalCase"]
           }
         ],
-
         "import/no-deprecated": "off",
         "arrow-parens": ["error", "always"],
-        "arrow-body-style": ["error", "as-needed"],
         "eqeqeq": ["error", "always"],
         "id-blacklist": "off",
         "id-match": "off",

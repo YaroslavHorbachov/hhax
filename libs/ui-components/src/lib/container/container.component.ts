@@ -11,6 +11,7 @@ export class ContainerComponent implements OnInit {
   constructor(@Inject(ENV) private readonly env: Env) {}
 
   public ngOnInit(): void {
+    // Display different env values based on the started application
     console.log(this.env);
   }
 }

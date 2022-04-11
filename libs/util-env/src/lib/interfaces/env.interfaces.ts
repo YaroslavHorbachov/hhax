@@ -11,6 +11,5 @@ export interface MFAEnv extends Env {
 }
 
 export interface NPPEnv extends Env {
-  readonly agifyApiKey: string;
   readonly agifyApiUrl: string;
 }

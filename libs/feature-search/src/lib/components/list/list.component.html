@@ -1,0 +1,7 @@
+<div *ngFor="let record of data">
+  <span>
+    <span>{{ record.name }} - {{ record.count }}</span>
+
+    <button (click)="onSelect(record.id)">Select</button>
+  </span>
+</div>

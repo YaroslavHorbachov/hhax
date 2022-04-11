@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/feature-search",
+  "sourceRoot": "libs/feature-search/src",
+  "prefix": "hhax",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature-search"],
+      "options": {
+        "jestConfig": "libs/feature-search/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/feature-search/src/**/*.ts", "libs/feature-search/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

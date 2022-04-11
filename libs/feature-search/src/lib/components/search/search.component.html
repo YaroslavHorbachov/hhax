@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="name">Name</label>
+
+  <input type="text" id="name" formControlName="name" />
+
+  <!-- Refactor to directives -->
+  <!-- Directives should encapsulate all error names/cases and control states -->
+  <div *ngIf="nameControl.errors && nameControl.dirty">
+    <p *ngIf="nameControl.errors['required']">Required field</p>
+  </div>
+
+  <button type="submit" [disabled]="nameControl.errors">Search</button>
+</form>
