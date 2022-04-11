@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DataAccessApiModule } from '@hhax/data-access-api';
 import { mockEnvProvider } from '@hhax/util-testing';
@@ -10,7 +11,7 @@ describe('PatientPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DataAccessApiModule],
+      imports: [DataAccessApiModule, HttpClientTestingModule],
       declarations: [PatientPageComponent],
       providers: [PatientService, mockEnvProvider],
     }).compileComponents();

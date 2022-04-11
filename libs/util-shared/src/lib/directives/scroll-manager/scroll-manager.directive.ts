@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Directive, HostListener, NgModule } from '@angular/core';
 
+// TODO: Provide example functionality
 @Directive({
   selector: '[hhaxScrollManager]',
 })

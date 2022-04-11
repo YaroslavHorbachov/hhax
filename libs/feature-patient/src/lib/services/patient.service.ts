@@ -35,17 +35,13 @@ export class PatientService {
 
   public readonly patients$ = this.rawData$.pipe(
     map((rawData) => {
-      const models = rawData.map((record) => new PatientModel(record));
-
-      return models;
+      return rawData.map((record) => new PatientModel(record));
     })
   );
 
   public readonly total$ = this.rawData$.pipe(map((breeds) => breeds.length));
 
   private setLoading(isLoading: boolean): void {
-    console.log(isLoading);
-
     this.isLoading.next(isLoading);
   }
 }
