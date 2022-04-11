@@ -6,7 +6,19 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   imports: [
-    StoreModule.forRoot({ router: routerReducer }),
+    StoreModule.forRoot(
+      { router: routerReducer },
+      {
+        runtimeChecks: {
+          strictStateImmutability: true,
+          strictActionImmutability: true,
+          strictStateSerializability: true,
+          strictActionSerializability: true,
+          strictActionWithinNgZone: true,
+          strictActionTypeUniqueness: true,
+        },
+      }
+    ),
     StoreRouterConnectingModule.forRoot(),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({

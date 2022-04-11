@@ -84,6 +84,6 @@
       }
     }
   },
-  "tags": [],
-  "implicitDependencies": ["util-env", "ui-components"]
+  "tags": ["scope:mfa"],
+  "implicitDependencies": []
 }

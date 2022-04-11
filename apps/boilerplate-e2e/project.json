@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["scope:boilerplate"],
   "implicitDependencies": ["boilerplate"]
 }

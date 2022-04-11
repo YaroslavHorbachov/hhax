@@ -195,12 +195,27 @@
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
           {
-            "enforceBuildableLibDependency": true,
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:libs",
+                "onlyDependOnLibsWithTags": ["scope:libs"]
+              },
+              {
+                "sourceTag": "scope:boilerplate",
+                "onlyDependOnLibsWithTags": ["scope:libs"]
+              },
+              {
+                "sourceTag": "scope:mfa",
+                "onlyDependOnLibsWithTags": ["scope:libs"]
+              },
+              {
+                "sourceTag": "scope:mpp",
+                "onlyDependOnLibsWithTags": ["scope:libs"]
+              },
+              {
+                "sourceTag": "scope:npp",
+                "onlyDependOnLibsWithTags": ["scope:libs"]
               }
             ]
           }

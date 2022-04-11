@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["scope:npp"],
   "implicitDependencies": ["npp"]
 }

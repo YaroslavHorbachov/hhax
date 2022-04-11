@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["scope:mfa"],
   "implicitDependencies": ["mfa"]
 }
